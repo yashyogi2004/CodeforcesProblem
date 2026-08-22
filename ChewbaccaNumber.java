@@ -6,7 +6,7 @@ public class ChewbaccaNumber{
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (c == '9') {
+            if (c == '9' && i == 0) {
                 sb.append(c);
             } else {
                 int digit = c - '0';
